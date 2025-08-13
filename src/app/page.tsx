@@ -123,7 +123,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve Contributed to a diverse range of projects, spanning from straightforward websites to sophisticated web applications. Below are some of my standout favorites.
+                  I&apos;ve Contributed to a wide range of projects, spanning from straightforward websites to e-commerce and learning management web applications. Below are some of my favorites.
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function Page() {
                   Projects I build for fun and purpose!
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I enjoy creating projects that either solve everyday problems or simply spark my curiosity. Whether it’s something practical or just a way to explore new ideas, these personal projects keep me engaged and constantly learning.
+                I enjoy creating projects that either solve my everyday problems or simply improve my knowledge. Whether it’s something practical or just a way to explore new ideas, these personal projects keep me engaged and constantly learning.
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ export default function Page() {
                 >
                   reaganrl14@gmail.com
                 </a>{" "}
-                Or send me a message! 706-564-5615
+                Or send me a message to 706-564-5615
               </p>
             </div>
           </BlurFade>
