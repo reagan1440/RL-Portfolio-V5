@@ -199,7 +199,7 @@ export default function Page() {
                 When im not working
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                In my free time I really enjoy going to concerts or festivals, Im currently working on building a blog to document all of the live music events I've been too! I also enjoy spending time with my friends and family, and collecting vintage tee-shirts.
+                In my free time I really enjoy going to concerts or festivals, Im currently working on building a blog to document all of the live music events I&apos;ve been too! I also enjoy spending time with my friends and family, and collecting vintage tee-shirts.
               </p>
             </div>
           </BlurFade>

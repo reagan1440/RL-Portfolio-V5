@@ -1,58 +1,70 @@
-// src/data/blog.ts
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
+import path from "path";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeStringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
 
-export interface BlogPost {
-  slug: string;
+type Metadata = {
   title: string;
-  date: string;
-  excerpt: string;
-  content: string;
+  publishedAt: string;
+  summary: string;
+  image?: string;
+};
+
+function getMDXFiles(dir: string) {
+  return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
 
-const postsDirectory = path.join(process.cwd(), "src/content/blog");
+export async function markdownToHTML(markdown: string) {
+  const p = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypePrettyCode, {
+      // https://rehype-pretty.pages.dev/#usage
+      theme: {
+        light: "min-light",
+        dark: "min-dark",
+      },
+      keepBackground: false,
+    })
+    .use(rehypeStringify)
+    .process(markdown);
 
-/**
- * Get all blog posts sorted by date (newest first)
- */
-export function getBlogPosts(): BlogPost[] {
-  const fileNames = fs.readdirSync(postsDirectory);
-
-  const posts = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.mdx?$/, "");
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-
-    const { data, content } = matter(fileContents);
-
-    return {
-      slug,
-      title: data.title || slug,
-      date: data.date || "",
-      excerpt: data.excerpt || "",
-      content,
-    };
-  });
-
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return p.toString();
 }
 
-/**
- * Get a single blog post by slug
- */
-export function getPost(slug: string): BlogPost | null {
-  const fullPath = path.join(postsDirectory, `${slug}.mdx`);
-  if (!fs.existsSync(fullPath)) return null;
-
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-
+export async function getPost(slug: string) {
+  const filePath = path.join("content", `${slug}.mdx`);
+  let source = fs.readFileSync(filePath, "utf-8");
+  const { content: rawContent, data: metadata } = matter(source);
+  const content = await markdownToHTML(rawContent);
   return {
+    source: content,
+    metadata,
     slug,
-    title: data.title || slug,
-    date: data.date || "",
-    excerpt: data.excerpt || "",
-    content,
   };
+}
+
+async function getAllPosts(dir: string) {
+  let mdxFiles = getMDXFiles(dir);
+  return Promise.all(
+    mdxFiles.map(async (file) => {
+      let slug = path.basename(file, path.extname(file));
+      let { metadata, source } = await getPost(slug);
+      return {
+        metadata,
+        slug,
+        source,
+      };
+    }),
+  );
+}
+
+export async function getBlogPosts() {
+  return getAllPosts(path.join(process.cwd(), "content"));
 }
