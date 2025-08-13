@@ -199,15 +199,14 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href="#"
+                Email me at{" "}
+                <a
+                  href="mailto:reaganrl14@gmail.com"
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                  reaganrl14@gmail.com
+                </a>{" "}
+                Or send me a message! 706-564-5615
               </p>
             </div>
           </BlurFade>

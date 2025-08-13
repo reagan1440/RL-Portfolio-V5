@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { FaHome } from 'react-icons/fa';
+// import { FaHome } from 'react-icons/fa';
 
 export const DATA = {
   name: "Reagan Lowe",
@@ -290,7 +290,7 @@ export const DATA = {
     },
     {
       title: "Echos Of Astra",
-      dates: "Status Completed",
+      dates: "Status: Completed",
       location: "Team Size: 5",
       description:
         "This application uses a API for ChatGPT to interpret your dreams, Astra will also record all dreams like a journal and recoginize patterns through the nights to figure out what your recent dreams have in common and could mean in your life",
