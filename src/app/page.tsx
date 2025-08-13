@@ -32,7 +32,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} zoom />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -159,7 +159,7 @@ export default function Page() {
                   Passion Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Projects I build for fun and purpose!
+                  Projects I built for fun and purpose!
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 I enjoy creating projects that either solve my everyday problems or simply improve my knowledge. Whether it’s something practical or just a way to explore new ideas, these personal projects keep me engaged and constantly learning.

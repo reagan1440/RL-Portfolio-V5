@@ -22,15 +22,22 @@ Avatar.displayName = AvatarPrimitive.Root.displayName
 
 const AvatarImage = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
-  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
->(({ className, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image> & { zoom?: boolean }
+>(({ className, zoom = false, ...props }, ref) => (
   <AvatarPrimitive.Image
     ref={ref}
-    className={cn("h-full w-full object-cover scale-[2.2] object-[center_20%]", className)}
+    className={cn(
+      zoom
+        ? "h-full w-full object-cover scale-[2.2] object-[center_20%]" // zoomed for displayName
+        : "aspect-square h-full w-full", // normal content
+      className
+    )}
     {...props}
   />
-))
-AvatarImage.displayName = AvatarPrimitive.Image.displayName
+));
+
+AvatarImage.displayName = AvatarPrimitive.Image.displayName;
+
 
 const AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,

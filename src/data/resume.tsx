@@ -12,6 +12,7 @@ export const DATA = {
     "Software Developer specializing in PHP, Node.js, React.js and JavaScript",
   summary: "I’ve contributed to over 60 projects (61 if you count this portfolio!) spanning website creation, maintenance, and optimization. I’m passionate about creating user-friendly and high-performing web applications. I have lots of expierence working closely with designers, product managers, and development teams. With a strong expertise in WordPress and Full Stack development, and a knack for problem-solving, I’m comfortable working under tight deadlines in fast-paced, high-visibility environments. Whether building from scratch or enhancing existing platforms, my focus is always on quality, usability, and meeting project goals.",
   avatarUrl: "/rlbday.png",
+  zoom: true,
   skills: [
     "React",
     "Next.js",
