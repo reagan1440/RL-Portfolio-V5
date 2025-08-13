@@ -10,7 +10,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Atlanta",
   description:
     "Software Developer specializing in PHP, Node.js, React.js and JavaScript",
-  summary: "Experienced in creating, maintaining, and optimizing websites and digital experiences. Skilled in collaborating with designers, product managers, and cross-functional teams to deliver responsive, high-performance solutions. Adept at WordPress development, browser/device testing, and meeting deadlines in fast-paced, high-visibility environments.	",
+  summary: "I’ve contributed to over 60 projects (61 if you count this portfolio!) spanning website creation, maintenance, and optimization. I’m passionate about creating user-friendly and high-performing web applications. I have lots of expierence working closely with designers, product managers, and development teams. With a strong expertise in WordPress and Full Stack development, and a knack for problem-solving, I’m comfortable working under tight deadlines in fast-paced, high-visibility environments. Whether building from scratch or enhancing existing platforms, my focus is always on quality, usability, and meeting project goals.",
   avatarUrl: "/rloutside.jpg",
   skills: [
     "React",
@@ -77,7 +77,7 @@ export const DATA = {
     {
       company: "RL Digital",
       badges: [],
-      href: "https://shopify.com",
+      href: "#",
       location: "Remote - Augusta/Atlanta GA",
       title: "Freelance Full Stack Developer",
       logoUrl: "/rllogo.jpg",
@@ -256,7 +256,7 @@ export const DATA = {
       dates: "Status: Beta",
       location: "Team Size: 4",
       description:
-        "Developed a application as a team project to help near by users find the ideal roomate, using realistic surveys to match users by asking questions like (what is your preferred AC set at?)",
+        "Built a roommate-matching app with my team that helps people nearby find a good fit by using realistic surveys—like asking about preferred AC settings—to match users based on real lifestyle preferences.",
       image:
         "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-512.png",
       mlh: "#",
@@ -273,7 +273,7 @@ export const DATA = {
       dates: "Status: Completed",
       location: "Team Size: 5",
       description:
-        "This application uses a API for ChatGPT to interpret your dreams, Astra will also record all dreams like a journal and recoginize patterns through the nights to figure out what your recent dreams have in common and could mean in your life",
+        "Built an app that uses the ChatGPT API to interpret your dreams. Astra also logs them like a journal and spots patterns over time to help you understand what your dreams might mean.",
       image:
         "https://static.vecteezy.com/system/resources/previews/020/528/222/non_2x/journal-icon-vector.jpg",
       mlh: "#",
@@ -289,7 +289,7 @@ export const DATA = {
       dates: "Status: Completed",
       location: "Solo Project",
       description:
-        "I wanted to test my knowdelege with integrating APIs so created this simple weather application",
+        "To challenge myself and sharpen my skills, I built this simple weather application by integrating various APIs.",
       icon: "public",
       image:
         "https://static.vecteezy.com/system/resources/previews/026/571/030/original/weather-icon-with-sun-and-cloud-on-transparent-background-free-png.png",
@@ -305,7 +305,7 @@ export const DATA = {
       dates: "Status: Completed",
       location: "Solo Project",
       description:
-        "This was my quickest yet favorite project so far, I wanted to work with computer audio so I made this simple cake that when connected to computer audio can be blown out with your breath!",
+        "My fastest and favorite project yet—a simple cake that lights up with computer audio and can be blown out by your breath when connected. I really enjoyed working with computer audio on this one!",
       image:
         "https://cdn2.iconfinder.com/data/icons/food-drink-60/50/1F382-birthday-cake-1024.png",
       links: [
@@ -324,9 +324,9 @@ export const DATA = {
     {
       title: "Random Outfit Generator",
       dates: "Status: Completed",
-      location: "Group Project",
+      location: "Solo Project",
       description:
-        "This application has all of my shirts, pants, shoes, shorts, dresses, etc and can randomly generate me an outfit if im feeling lazy enough!",
+        "An app that stores all my clothes—shirts, pants, shoes, dresses, and more—and can randomly put together an outfit when I’m feeling too lazy to decide.",
       image:
         "https://cdn-icons-png.flaticon.com/512/123/123001.png",
       mlh: "#",
