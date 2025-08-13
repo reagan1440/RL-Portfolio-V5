@@ -22,7 +22,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 🌻`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👩‍💻`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -185,6 +185,23 @@ export default function Page() {
                 </BlurFade>
               ))}
             </ul>
+          </BlurFade>
+        </div>
+      </section>
+      <section id="contact">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-3">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                More About Me
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                When im not working
+              </h2>
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                In my free time I really enjoy going to concerts or festivals, Im currently working on building a blog to document all of the live music events I've been too! I also enjoy spending time with my friends and family, and collecting vintage tee-shirts.
+              </p>
+            </div>
           </BlurFade>
         </div>
       </section>

@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Software Developer specializing in PHP, Node.js, React.js and JavaScript",
   summary: "Experienced in creating, maintaining, and optimizing websites and digital experiences. Skilled in collaborating with designers, product managers, and cross-functional teams to deliver responsive, high-performance solutions. Adept at WordPress development, browser/device testing, and meeting deadlines in fast-paced, high-visibility environments.	",
-  avatarUrl: "/picofme.jpg",
+  avatarUrl: "/rloutside.jpg",
   skills: [
     "React",
     "Next.js",
@@ -109,7 +109,7 @@ export const DATA = {
     {
       title: "SkinbonesCME",
       href: "https://skinbonescme.com",
-      dates: "Jan 2024 - Feb 2024",
+      dates: "",
       active: true,
       description:
         "Successfully integrated WooCommerce with the existing Lifter Learning Management platform, enabling 40,000+ users to migrate with all current courses and purchases intact. Rewrote two custom plugins to integrate with the customer database and mailer. Also performed consistent site refreshes, added new content, and developed new course landing pages, products, and integrations.",
@@ -128,11 +128,6 @@ export const DATA = {
           href: "https://skinbonescme.com",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Solutionbuilt",
-          href: "#",
-          icon: <Icons.company className="size-3" />,
-        },
       ],
       image: "/videos/skinbonesfinal.gif",
       video:
@@ -141,7 +136,7 @@ export const DATA = {
     {
       title: "SolutionBuilt",
       href: "https://solutionbuilt.com",
-      dates: "June 2023 - Present",
+      dates: "",
       active: true,
       description:
         "Rebuilt my company website to resolve server-side rendering (SSR) issues, optimize performance, and significantly improve page speed and Google Lighthouse scores. Implemented best practices for SEO, accessibility, and code efficiency to enhance overall user experience and search engine visibility.",
@@ -157,11 +152,6 @@ export const DATA = {
           href: "https://solutionbuilt.com",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Solutionbuilt",
-          href: "#",
-          icon: <Icons.company className="size-3" />,
-        },
       ],
       image: "/videos/sbfinal.gif",
       video: "",
@@ -169,7 +159,7 @@ export const DATA = {
     {
       title: "Jackson Spaulding",
       href: "https://tmcapital.com",
-      dates: "June 2023 - Present",
+      dates: "",
       active: true,
       description:
         "Collaborated with Jackson Spaulings to develop and enhance website features for a key client, ensuring all updates were delivered on schedule and rigorously quality-assured. Focused on optimizing the user experience and interface design to create an accessible, intuitive, and visually engaging site that caters effectively to a diverse visitor base. Maintained clear communication throughout the process to quickly identify and resolve issues, contributing to overall client satisfaction and site performance.",
@@ -185,11 +175,6 @@ export const DATA = {
           href: "https://tmcapital.com",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "/videos/tmcapital.gif",
       video: "",
@@ -197,7 +182,7 @@ export const DATA = {
     {
       title: "IPW App",
       href: "#",
-      dates: "June 2023 - Present",
+      dates: "",
       active: true,
       description:
         "Maintained and enhanced an application for tracking worker hours, work orders, equipment maintenance, and managerial tasks like billing and payroll. Added new features such as a customer dashboard showing on-site worker status and autocomplete salary inputs with automatic payout calculations, improving workflow efficiency and accuracy.",
@@ -209,14 +194,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "App",
           href: "#",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/videos/ipw.gif",
@@ -224,7 +204,7 @@ export const DATA = {
     },
     {
       title: "EchoRoom",
-      href: "https://echoroomatl.com",
+      href: "",
       dates: "April 2023 - September 2023",
       active: true,
       description:
@@ -247,7 +227,7 @@ export const DATA = {
     },
     {
       title: "Drone Clean",
-      href: "https://droneclean.com",
+      href: "",
       dates: "April 2023 - March 2024",
       active: true,
       description:
